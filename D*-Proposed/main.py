@@ -43,9 +43,6 @@ class sudNet(nn.Module):
     def __init__(self, num_classes,model):  #use encoder to pass pretrained encoder
         super().__init__()
         
-        #model_file = importlib.import_module('erfnet')
-        #model = model_file.Net(20).cuda()
-        #model = load_my_state_dict(model, torch.load('../trained_models/erfnet_pretrained.pth'))
         self.encoder = list(model.children())[0].encoder
         self.decoder = nn.Sequential(*list(list(model.children())[0].decoder.layers.children())) #nn.Sequential(*(list(model.decoder.layers.children())[:-1]))
         self.decoder_last_child = list(list(model.children())[0].decoder.children())[-1]
@@ -102,10 +99,7 @@ class MyCoTransform(object):
             input = input.crop((0, 0, input.size[0]-transX, input.size[1]-transY))
             target = target.crop((0, 0, target.size[0]-transX, target.size[1]-transY))   
 
-            #TODO future: additional augments
-            #CenterCrop(256)  
-            #Normalize([.485, .456, .406], [.229, .224, .225]),
-
+   
         input = ToTensor()(input)
         # if (self.enc):
         #     target = Resize(int(self.height/8), Image.NEAREST)(target)
@@ -118,9 +112,6 @@ best_acc = 0
 
 def train(args, model, enc=False):
     global best_acc
-
-    #TODO: calculate weights by processing dataset histogram (now its being set by hand from the torch values)
-    #create a loder to run all images and calculate histogram of labels, then create weight array using class balancing
 
     weight = torch.ones(NUM_CLASSES)
     if (enc):
