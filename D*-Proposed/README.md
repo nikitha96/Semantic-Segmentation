@@ -1,6 +1,6 @@
 ## MODEL: D*-Propsed
 
-PyTorch code for training D*-Proposed model.
+PyTorch code for training D*-Proposed model. The code is based initially on [ERFNet](https://github.com/Eromera/erfnet_pytorch) as mentioned in the paper.
 
 ## Example commands
 
