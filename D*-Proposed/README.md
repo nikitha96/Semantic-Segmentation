@@ -2,7 +2,7 @@
 
 PyTorch code for training D*-Proposed model. The code is based initially on [ERFNet](https://github.com/Eromera/erfnet_pytorch) as mentioned in the paper.
 
-## Example commands
+## Usage
 
 ```
 python3 ~/.main.py  --model imgnet_ups --savedir save_imgnet_ups  --dirpath  "path to save dir"  --datadir "path to datadir"  --num-epochs 200 --batch-size 6 --decoder --pretrainedEncoder ~/model_best.pth.tar
