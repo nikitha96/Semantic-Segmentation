@@ -171,8 +171,6 @@ class Decoder (nn.Module):
         output = self.output_conv(output)
         return output
 
-#ERFNet
-#MobileNet
 
 class Net (nn.Module):
     def __init__(self, num_classes, encoder=None):  #use encoder to pass pretrained encoder
