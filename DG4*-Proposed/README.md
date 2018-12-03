@@ -4,10 +4,10 @@
 
 PyTorch code for training DG4*-Proposed model.
 
-## Example commands
+## Usage
 
 ```
-python3 ~/DG_main.py  --model DGstar_model --savedir DG2star  --dirpath "path to dir"   --datadir "path to dataset"  --num-epochs 200 --batch-size 6 --decoder --pretrainedEncoder ~/G2_Imgnet_Chkpt/model_best.pth.tar --groups 4
+python3 ~/DG_main.py  --model DGstar_model --savedir DG4star  --dirpath "path to dir"   --datadir "path to dataset"  --num-epochs 200 --batch-size 6 --decoder --pretrainedEncoder ~/G2_Imgnet_Chkpt/model_best.pth.tar --groups 4
 
 ```
 Number of epochs and batch size can be set according to your choice.
