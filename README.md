@@ -21,3 +21,4 @@ If you use Pip (make sure to have it configured for Python3.6) you can install w
 ```
 pip install numpy matplotlib torchvision Pillow visdom
 ```
+For instructions please refer to the README on each folder
