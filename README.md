@@ -1,5 +1,8 @@
 # Semantic-Segmentation
+## Publications
 
+
+**"Efficient Semantic Segmentation using Gradual Grouping"**, Nikitha Vallurupalli, Sriharsha Annamaneni, Girish Varma, C V Jawahar, Manu Mathew, Soyeb Nagori, IEEE Embedded Vision Workshop, June 2018, Salt Lake City, UT. [[pdf]](https://arxiv.org/pdf/1806.08522.pdf)
    
 ## Requirements:
 
